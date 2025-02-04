@@ -21,15 +21,15 @@ export default function Dashboard() {
     <div className='min-h-screen flex flex-col md:flex-row'>
       <div className='md:w-56'>
         {/* Sidebar */}
-        <DashSidebar />
+       {/* <DashSidebar /> */}  
       </div>
       {/* profile... */}
-      {tab === 'profile' && <DashProfile />}
+    {/* {tab === 'profile' && <DashProfile />}
 
       {tab === 'posts' && <DashPosts />}
 
       {tab === 'users' && <DashUsers />}
-      {tab === 'dash' && <DashboardComp />}
+      {tab === 'dash' && <DashboardComp />}  */}
     </div>
   );
 }

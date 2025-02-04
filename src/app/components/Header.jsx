@@ -38,7 +38,7 @@ export default function Header() {
         className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'
       >
         <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-          Souhail
+           {process.env.NEXT_PUBLIC_APP_NAME}
         </span>
         Blog
       </Link>
@@ -93,8 +93,8 @@ export default function Header() {
           </Navbar.Link>
         </Link>
         <Link href='/projects'>
-          <Navbar.Link active={path === '/projects'} as={'div'}>
-            Projects
+          <Navbar.Link active={path === '/articles'} as={'div'}>
+            Articles
           </Navbar.Link>
         </Link>
       </Navbar.Collapse>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
-//import CallToAction from './components/CallToAction';
-//import RecentPosts from './components/RecentPosts';
+import CallToAction from './components/CallToAction';
+import RecentPosts from './components/RecentPosts';
 
 export default async function Home() {
   let posts = null;
@@ -39,7 +39,7 @@ export default async function Home() {
           View all posts
         </Link>
       </div>
-     {/* <div className='p-3 bg-amber-100 dark:bg-slate-700'>
+      <div className='p-3 bg-amber-100 dark:bg-slate-700'>
         <CallToAction />
       </div>
       <div className='p-3 flex flex-col gap-8 py-7'>
@@ -50,7 +50,7 @@ export default async function Home() {
         >
           View all posts
         </Link>
-      </div>*/}
+      </div>
     </div>
   );
 }
