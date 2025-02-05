@@ -7,6 +7,8 @@ import { useSearchParams } from 'next/navigation';
 import DashPosts from '../components/DashPosts';
 import DashUsers from '../components/DashUsers';
 import DashboardComp from '../components/DashboardComp';
+
+
 export default function Dashboard() {
   const searchParams = useSearchParams();
   const [tab, setTab] = useState('');
@@ -20,16 +22,16 @@ export default function Dashboard() {
   return (
     <div className='min-h-screen flex flex-col md:flex-row'>
       <div className='md:w-56'>
-        {/* Sidebar */}
-       {/* <DashSidebar /> */}  
+         Sidebar 
+       <DashSidebar />  
       </div>
       {/* profile... */}
-    {/* {tab === 'profile' && <DashProfile />}
+     {tab === 'profile' && <DashProfile />}
 
       {tab === 'posts' && <DashPosts />}
 
       {tab === 'users' && <DashUsers />}
-      {tab === 'dash' && <DashboardComp />}  */}
+      {tab === 'dash' && <DashboardComp />} 
     </div>
   );
 }
